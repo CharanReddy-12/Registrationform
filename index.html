@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+
+    <form action="">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <table cellpadding="8">
+          <tr>
+            <td><label for="fname">First Name:</label></td>
+            <td>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="ex: Charan"
+                required
+              />
+              <p class="tooltip">ENTER YOUR NAME</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="lname">Last Name:</label></td>
+            <td>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="ex: Reddy"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="mob">Mobile Number:</label></td>
+            <td>
+              <input
+                type="tel"
+                id="mob"
+                name="mob"
+                placeholder="ex: 9876543210"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="ex: charan@gmail.com"
+                required
+              />
+              <p class="tooltip">ENTER YOUR EMAIL</p>
+              <img class="valid" src="accept.png" alt="valid" />
+              <img class="invalid" src="shape.png" alt="invalid" />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td>
+              <input
+                type="password"
+                id="password"
+                placeholder="at least 5 characters"
+                minlength="5"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="cpassword">Confirm Password:</label></td>
+            <td>
+              <input
+                type="password"
+                id="cpassword"
+                placeholder="re-enter password"
+                minlength="5"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="dob">Date of Birth:</label></td>
+            <td>
+              <input type="date" id="dob" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="age">Age:</label></td>
+            <td>
+              <input
+                type="number"
+                id="age"
+                placeholder="ex: 21"
+                min="18"
+                max="80"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="GENDER">Gender:</td>
+            <td>
+              <input type="radio" name="gender" required /> Male
+              <input type="radio" name="gender" /> Female
+              <input type="radio" name="gender" /> others
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="country">Select Country:</label></td>
+            <td>
+              <select id="country" required>
+                <option value="" disabled selected>Select country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="upload">Upload Resume:</label></td>
+            <td>
+              <input type="file" id="upload" required />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <br /><br />
+
+      <fieldset>
+        <legend>Course Information</legend>
+        <table cellpadding="8">
+          <tr>
+            <td><label for="course">Select Course:</label></td>
+            <td>
+              <select id="course" required>
+                <option value="" disabled selected>Select course</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+                <option>Python</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="GENDER">Delivery Mode:</td>
+            <td>
+              <input type="radio" name="mode" required /> Online
+              <input type="radio" name="mode" /> Offline
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="institute">Institute Name:</label></td>
+            <td>
+              <input
+                type="text"
+                id="institute"
+                placeholder="ex: ABC Institute"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="feedback">Feedback:</label></td>
+            <td>
+              <textarea
+                id="feedback"
+                rows="4"
+                cols="40"
+                placeholder="ex: Very good course and teaching"
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td><input type="submit" value="Register" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

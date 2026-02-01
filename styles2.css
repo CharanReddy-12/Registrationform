@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  background: linear-gradient(90deg, #c9def4, #f5ccd4, #b8a4c9);
+}
+h1 {
+  background: linear-gradient(90deg, blue, navy);
+  text-align: center;
+  width: 35%;
+  margin: 20px auto;
+  border-radius: 25px;
+  padding: 10px 15px;
+  border: 2px solid cyan;
+  box-shadow: 2px 2px 11px 5px blue;
+}
+
+form {
+  width: 545px;
+  margin: 0px auto;
+}
+fieldset {
+  border-radius: 15px;
+  padding: 25px;
+  border: 2px solid cyan;
+  background: linear-gradient(90deg, #c9def4, #f5ccd4, #b8a4c9);
+}
+legend {
+  background-color: rgb(54, 187, 197);
+  color: black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: 600;
+  font-size: 12px;
+}
+table {
+  width: 100%;
+}
+td {
+  padding: 12px 8px;
+}
+label {
+  color: rgb(8, 8, 8);
+  font-size: 15px;
+}
+input {
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  background: linear-gradient(90deg, #c9def4, #f5ccd4, #b8a4c9);
+  color: #ffffff;
+  font-weight: 600;
+  border: 2px solid cyan;
+}
+input:focus {
+  outline: none;
+  background: rgb(179, 158, 120);
+  border: 2px solid yellow;
+  box-shadow: 0 0 5px yellow;
+}
+.tooltip {
+  background-color: cyan;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  color: black;
+  margin-top: 2px;
+  width: 40%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+}
+input:focus + p {
+  display: block;
+}
+input[type="radio"]:checked {
+  height: 15px;
+  width: 15px;
+}
+input[type="radio"]:checked + label {
+  color: red;
+  font-size: 20px;
+}
+.valid,
+.invalid {
+  height: 20px;
+  margin-top: 5px;
+  display: none;
+}
+input[type="email"]:focus:valid + p + .valid {
+  display: inline;
+}
+input[type="email"]:focus:invalid + p + .valid + .invalid {
+  display: inline;
+}
+
+/*/* When any input inside the row is focused, change the label's style */
+/*tr:focus-within label {
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+}/*
+
+/* Base Style: "Back to normal" timing (Exit) */
+td label {
+  color: black;
+  /* Takes 1.0 seconds to return to normal when mouse leaves */
+  transition: all 1s ease-out;
+}
+
+/* Hover Style: "Hovering" timing (Enter) */
+td label:hover {
+  color: #007bff;
+  /* Takes only 0.2 seconds to change when mouse enters */
+  transition: all 0.2s ease-in;
+}
+.GENDER {
+  color: black;
+}

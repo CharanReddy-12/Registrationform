@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Successful</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        background: linear-gradient(90deg, #c9def4, #f5ccd4, #b8a4c9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        background: linear-gradient(90deg, #c9def4, #f5ccd4, #b8a4c9);
+        padding: 40px 60px;
+        border-radius: 20px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        animation: fadeSlideUp 1s ease-out;
+      }
+      h1 {
+        background: linear-gradient(90deg, blue, rgba(42, 42, 203, 0.162));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 30px;
+        font-weight: 600;
+      }
+      a {
+        display: inline-block;
+        padding: 12px 25px;
+        background: linear-gradient(90deg, #1a73e8, #0b3d91);
+        color: white;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+      a:hover {
+        box-shadow: 0 8px 20px #00ffff;
+        transform: translateY(-3px);
+      }
+      @keyframes fadeSlideUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>✅ Registration Successful!</h1>
+      <p>Thank you for registering for the course. We will contact you soon.</p>
+      <a href="index.html">Back to Registration</a>
+    </div>
+  </body>
+</html>
